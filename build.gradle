@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.egoie'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.egoie.util.DecodeAES'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
